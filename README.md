@@ -25,9 +25,11 @@ Once the startup is completed, you can send POST request to `/scan` endpoint.
 ```bash
 curl -F "file=@<path-to-target-file>" http://localhost:8000/scan
 ```
-The JSON response information about all successful matches.
+The API responds in JSON with information about all successful matches.
 
 ### Resources
 The Rule Sets I used:
 1. yara-forge
 `https://yarahq.github.io`
+2. Florian Roth's signature base
+`https://github.com/Neo23x0/signature-base.git`
