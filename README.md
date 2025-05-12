@@ -1,4 +1,6 @@
-# MalScan
+# ScanMal
+ScanMal is a cloud-based static malware scanner that uses yara rulesets to scan for known malware signatures. It is built on python, using `YARA-X` and `fastapi`.
+
 ## Table of contents
 1. [Installation](#installation)
 2. [Usage](#usage)
