@@ -1,0 +1,23 @@
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore Python cache files
+*.pyc
+*.pyo
+__pycache__
+
+# Ignore virtual environment
+myenv/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore Dockerfile itself and other files not necessary for the image
+Dockerfile
+docker-compose.yml
+
+# Ignore .zip yara rulesets
+*.zip

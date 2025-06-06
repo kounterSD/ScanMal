@@ -16,7 +16,7 @@ logging.basicConfig(
 )
 
 #Test code to use and/or match YARA rules.
-rules_dir="./packages/full/" #I used yara-forge Rule Sets
+rules_dir="/app/packages/full/" #I used yara-forge Rule Sets
 mal_dir = "./test-php-rev-shell.php" #dir to target file
 app = FastAPI()
 
@@ -68,7 +68,7 @@ async def scan_uploads_file(file: UploadFile=File(...)):
                     "pattern_id": pattern.identifier,
                     "offset": match.offset,
                     "length": match.length,
-                    "matched_bytes": matched_bytes.hex()  # return hex string
+                    "matched_bytes": matched_bytes.decode('utf-8')  # return hex string
                 })
         response.append(rule_result)
 
